@@ -1,0 +1,24 @@
+{
+  "name": "funtranslation",
+  "version": "1.0.0",
+  "description": "first project using funtranslation api",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishabh28920/fun_translator.git"
+  },
+  "author": "Rishabh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishabh28920/fun_translator/issues"
+  },
+  "homepage": "https://github.com/rishabh28920/fun_translator#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
