@@ -14,10 +14,10 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-60 mr-auto mt-2">
-                <a class="card-block card-color" href="index.html">
+                <a class="card-block card-color" id="test" >
                     <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" class="card-img-top" alt="minion-image">
                         <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">Minion</h5>
+                            <h5 class="card-title d-flex justify-content-center" id="val">Minion</h5>
                             <p class="card-text">Minions are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010). They are characterized by their childlike behavior and unique language, which is almost intelligible at times.</p>
                         </div>
                 </a>
@@ -27,7 +27,7 @@
                 <div class="card h-60 mr-auto mt-2">
                   <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" class="card-img-top" alt="minion-image">
                   <div class="card-body">
-                    <h5 class="card-title">Minion</h5>
+                    <h5 class="card-title d-flex justify-content-center">Minion</h5>
                     <p class="card-text">Minions are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010). They are characterized by their childlike behavior and unique language, which is almost intelligible at times.</p>
                   </div>
                 </div>
@@ -36,7 +36,7 @@
                 <div class="card h-60 mr-auto mt-2">
                   <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" class="card-img-top" alt="minion-image">
                   <div class="card-body">
-                    <h5 class="card-title">Minion</h5>
+                    <h5 class="card-title d-flex justify-content-center">Yoda</h5>
                     <p class="card-text">Minions are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010). They are characterized by their childlike behavior and unique language, which is almost intelligible at times.</p>
                   </div>
                 </div>
@@ -45,7 +45,7 @@
                 <div class="card h-60 mb-2">
                   <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" class="card-img-top" alt="minion-image">
                   <div class="card-body">
-                    <h5 class="card-title">Minion</h5>
+                    <h5 class="card-title d-flex justify-content-center">Hodor</h5>
                     <p class="card-text">Minions are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010). They are characterized by their childlike behavior and unique language, which is almost intelligible at times.</p>
                   </div>
                 </div>
@@ -54,7 +54,7 @@
                 <div class="card h-60 mb-2">
                   <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" class="card-img-top" alt="minion-image">
                   <div class="card-body">
-                    <h5 class="card-title">Minion</h5>
+                    <h5 class="card-title d-flex justify-content-center">Minion</h5>
                     <p class="card-text">Minions are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010). They are characterized by their childlike behavior and unique language, which is almost intelligible at times.</p>
                   </div>
                 </div>
@@ -63,5 +63,14 @@
     </div>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById("test").addEventListener("click", function() {
+             var b = document.getElementById("val").innerHTML;
+             var val = "?title=" + b;
+             url = "minionLogic.html" + val;
+             window.location.href=url;
+             
+            });
+    </script>
 </body>
 </html>
