@@ -14,63 +14,51 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-60 mr-auto mt-2">
-                <a class="card-block card-color" id="test" >
+                <a class="card-block card-color" id="minion" onclick="func(this.id);">
                     <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" class="card-img-top" alt="minion-image">
                         <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center" id="val">Minion</h5>
+                            <h5 class="card-title d-flex justify-content-center" id="minion-val">Minion</h5>
                             <p class="card-text">Minions are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010). They are characterized by their childlike behavior and unique language, which is almost intelligible at times.</p>
                         </div>
                 </a>
               </div>
             </div>
             <div class="col">
+                <div class="card mr-auto mt-2">
+                    <a class="card-block card-color" id="groot" onclick="func(this.id);">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/groot.jpg" class="card-img-top" style="width:26%" alt="groot-image">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-center" id="groot-val">Groot</h5>
+                            <p class="card-text">Groot is a fictional character appearing in American comic books published by Marvel Comics. Created by Stan Lee, Larry Lieber and Jack Kirby, the character first appeared in Tales to Astonish (November 1960)</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
                 <div class="card h-60 mr-auto mt-2">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" class="card-img-top" alt="minion-image">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-center">Minion</h5>
-                    <p class="card-text">Minions are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010). They are characterized by their childlike behavior and unique language, which is almost intelligible at times.</p>
-                  </div>
+                    <a class="card-block card-color" id="yoda" onclick="func(this.id);">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/yoda.png" class="card-img-top" style="width:40%" alt="yoda-image">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-center" id="yoda-val">Yoda</h5>
+                            <p class="card-text">Groot is a fictional character appearing in American comic books published by Marvel Comics. Created by Stan Lee, Larry Lieber and Jack Kirby, the character first appeared in Tales to Astonish (November 1960)</p>
+                        </div>
+                    </a>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-60 mr-auto mt-2">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" class="card-img-top" alt="minion-image">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-center">Yoda</h5>
-                    <p class="card-text">Minions are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010). They are characterized by their childlike behavior and unique language, which is almost intelligible at times.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-60 mb-2">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" class="card-img-top" alt="minion-image">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-center">Hodor</h5>
-                    <p class="card-text">Minions are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010). They are characterized by their childlike behavior and unique language, which is almost intelligible at times.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-60 mb-2">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Minions_characters.png" class="card-img-top" alt="minion-image">
-                  <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-center">Minion</h5>
-                    <p class="card-text">Minions are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010). They are characterized by their childlike behavior and unique language, which is almost intelligible at times.</p>
-                  </div>
-                </div>
-              </div>
-          </div>
+            </div>
+              
     </div>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-        document.getElementById("test").addEventListener("click", function() {
-             var b = document.getElementById("val").innerHTML;
-             var val = "?title=" + b;
-             url = "minionLogic.html" + val;
-             window.location.href=url;
-             
-            });
+        function func(id){
+            var val = "?title=" + id;
+            url = "minionLogic.html" + val;
+            window.location.href=url;
+        }
     </script>
 </body>
 </html>
