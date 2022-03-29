@@ -172,29 +172,30 @@ body {
 
 .links{
     text-decoration: none;
-    color: white;
+    /* color: white; */
     font-weight: 800;
     font-size: larger;
 }
 
-.btn{
+/* .btn{
     border-width: 4px;
     border-style: solid;
     border-image: linear-gradient(to right, darkblue, darkorchid) 1;
-  }
+  } */
 
-  .btn {
+  .butt {
     cursor: pointer;
-    border: 1px solid #3498db;
+    border: 2px solid aqua;
     background-color: transparent;
+    transition: transform .3s;
     height: 50px;
     width: 200px;
-    /* color: #3498db; */
+    color: white;
     font-size: 1.5em;   
-  box-shadow: 0 8px 8px -4px lightblue;
-  transition: transform .2s;
+  box-shadow: 0px 8px 8px -4px aquamarine; */
+ 
 }
 
-.btn:hover{
-    transform: scale(1.1);
+.butt:hover{
+    transform: scale(1.4);
 }

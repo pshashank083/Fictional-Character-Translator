@@ -1,6 +1,5 @@
 body * {
     box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   }
@@ -172,12 +171,13 @@ body * {
 
 h5{
     font-family: 'Audiowide', sans-serif;
-    font-size: 30px;
+    font-size: 300px;
 
 } 
 
 .charCard:hover{
     cursor: pointer;
+    color: #000000;
     transform: scale(1.1);
 }
 
@@ -186,11 +186,8 @@ h5{
     color: black;
 }
 
-.card-footer{
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 2px;
-    color: white;
+.card-color:hover{
+  color: #000000;
 }
 
 .button-style{
