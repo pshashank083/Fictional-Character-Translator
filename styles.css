@@ -1,8 +1,291 @@
-.card-color{
-    color:black;
-    text-decoration: none;
+body * {
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  }
+  
+  body {
+    background: -webkit-linear-gradient(rgba(246, 247, 249, 0.8), rgba(246, 247, 249, 0.8)), url(https://i.pinimg.com/originals/00/75/17/00751792b9faea957b239d8cb7b91a61.png) no-repeat center center fixed;
+    background:  url(https://i.pinimg.com/originals/cd/b2/f3/cdb2f3d3c08c40baa634920a89498248.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  
+  .welcome {
+    font-size: 57.6px;
+    line-height: 64px;
+    font-family: 'Muli';
+    color: #ecf0f1;
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    margin-top: -15px;
+    margin-left: -165px;
+  }
+  .welcome:before {
+    content: '[';
+    position: absolute;
+    left: -30px;
+    line-height: 64px;
+  }
+  .welcome:after {
+    content: ']';
+    position: absolute;
+    right: -30px;
+    line-height: 64px;
+  }
+  .welcome:after,
+  .welcome:before {
+    font-family: 'Muli';
+    color: #ACACAC;
+    font-weight: 500;
+    font-size: 64px;
+    animation: 2s linear 0s normal none infinite opacity;
+    -webkit-animation: 2s ease-out 0s normal none infinite opacity;
+    -moz-animation: 2s ease-out 0s normal none infinite opacity;
+    -o-animation: 2s ease-out 0s normal none infinite opacity;
+  }
+  .visible {
+    float: left;
+    font-weight: 600;
+    overflow: hidden;
+    height: 64px;
+  }
+  .welcome p {
+    display: inline;
+    float: left;
+    margin: 0;
+  }
+  .welcome ul {
+    margin-top: 0;
+    padding-left: 284px;
+    text-align: left;
+    list-style: none;
+    animation: 6s linear 0s normal none infinite change;
+    -webkit-animation: 6s linear 0s normal none infinite change;
+    -moz-animation: 6s linear 0s normal none infinite change;
+    -o-animation: 6s linear 0s normal none infinite change;
+  }
+  .welcome ul li {
+    line-height: 64px;
+    margin: 0;
+  }
+  @-webkit-keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes change {
+    0% {
+      margin-top: 0;
+    }
+    15% {
+      margin-top: 0;
+    }
+    25% {
+      margin-top: -64px;
+    }
+    40% {
+      margin-top: -64px;
+    }
+    50% {
+      margin-top: -128px;
+    }
+    65% {
+      margin-top: -128px;
+    }
+    75% {
+      margin-top: -64px;
+    }
+    85% {
+      margin-top: -64px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  @keyframes change {
+    0% {
+      margin-top: 0;
+    }
+    15% {
+      margin-top: 0;
+    }
+    25% {
+      margin-top: -64px;
+    }
+    40% {
+      margin-top: -64px;
+    }
+    50% {
+      margin-top: -128px;
+    }
+    65% {
+      margin-top: -128px;
+    }
+    75% {
+      margin-top: -64px;
+    }
+    85% {
+      margin-top: -64px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  
+.card-img-top{
+    height: 250px;
+    width: 150px;
 }
 
 .embed-responsive .card-img-top {
     object-fit: cover;
 }
+
+.charCard{
+    margin: 30px 12px 15px 12px;
+    height: 90%;
+    transition: transform .2s;
+    font-family: 'Trilong', 'sans-serif';
+    font-weight: 600;
+}
+
+h5{
+    font-family: 'Audiowide', sans-serif;
+    font-size: 30px;
+
+} 
+
+.charCard:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card-color{
+    text-decoration: none;
+    color: black;
+}
+
+.card-footer{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2px;
+    color: white;
+}
+
+.button-style{
+    text-decoration: none;
+    font-size: large;
+    background-color: black;    
+    text-align: center;
+    color: aliceblue;
+}
+
+a:hover{
+    color: black;
+}
+
+.modal-dialog {
+    height: 90%; /* = 90% of the .modal-backdrop block = %90 of the screen */
+   
+  }
+.modal-content {
+    height: 50%; 
+    background-image: linear-gradient(25deg,#ffffff,#000000 50%);
+}
+.modalCard{
+    margin: 30px 12px 0px 12px;
+    height: 50%;
+
+}
+.modal-footer{
+    border-top: 0 none;
+    margin-top: 0px;
+}
+
+.navbar{
+    background: transparent;
+}
+.nav-item{
+    margin: 0px 20px;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+}
+
+:root{
+  --bg_color : #222629;
+  --heading: #86C232;
+  --side: white;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #000000;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Source Code Pro", monospace;
+}
+h1{
+  font-size: 2.5rem;
+  font-weight: 300;
+  position: relative;
+  color: var(--heading)
+}
+h1::before, h1::after{
+  content: '';
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  position: absolute;
+}
+h1::before{
+  background: var(--bg_color);
+  animation: typewriter 3s steps(21) forwards;
+}
+h1::after{
+  width: 5px;
+  background: var(--heading);
+  animation: typewriter 3s steps(21) forwards, blink 750ms steps(21) infinite;
+}
+@keyframes typewriter{
+  to{left: 100%;}
+}
+@keyframes blink{
+  to{
+    background: transparent;
+  }
+}
+
+
+
+
+
