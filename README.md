@@ -1,5 +1,4 @@
 # Fictional-Character-Translator
-Fictional_Character_Translator
 Live Link : https://fictional--translator.web.app/index.html
 
 There are many fans of different fictional characters shown in movies like YODA, MINNIONS, GROOT, etc.
@@ -13,7 +12,9 @@ CSS
 Bootstrap5
 JavaScript
 APIs.
-Glimpse of project - Home Page
+Glimpse of project -
+
+Home Page:
 ![home page fct](https://user-images.githubusercontent.com/56198316/161396090-e8b6c1ef-bfd4-4b5c-b81f-41caacd45925.JPG)
 
 Character Page:
